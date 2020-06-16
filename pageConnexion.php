@@ -27,21 +27,18 @@
                                 <form method="post" action="scriptConnexion.php" autocomplete="on">
                                     <h1>Connexion</h1> 
                                     <p> 
-                                        <label for="username" class="uname" data-icon="u" > Nom d'utilisateur : </label>
-                                        <input id="username" name="pseudo" required="required" type="text" required pattern="([A-z0-9À-ž\s]){2,}"/>
+                                        <label for="username" class="uname" data-icon="u" > identifiant : </label>
+                                        <input id="username" name="identifiant" required="required" type="text" required pattern="([A-z0-9À-ž\s]){2,}"/>
                                     </p>
                                     <p> 
                                         <label for="password" class="youpasswd" data-icon="p"> Mot de passe : </label>
-                                        <input id="password" name="motDePasse" required="required" type="password"  /> 
+                                        <input id="password" name="password" required="required" type="password"  /> 
                                     </p>
 
                                     <p class="login button"> 
                                         <input type="submit" value="Connexion" /> 
                                     </p>
-                                    <p class="change_link">
-                                        Pas encore inscrit ?
-                                        <a href="inscription.php" class="to_register">Inscription</a>
-                                    </p>
+                                    
                                 </form>
                              </div>
 
