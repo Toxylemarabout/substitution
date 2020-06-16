@@ -1,0 +1,85 @@
+#partenaire {
+position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+#product-select{
+position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
+
+}
+
+#quantite {
+position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+#livraison {
+position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+#valider {
+position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 60%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+
+@media screen and (max-width: 992px){
+
+		#partenaire {
+			font-size: 25px;
+			border-radius: 5px;
+  			border-color: black;
+		}
+		#product-select {
+			font-size: 25px;
+			border-radius: 5px;
+  			border-color: black;
+		}
+		#quantite{
+			font-size: 25px;
+			border-radius: 5px;
+  			border-color: black;
+		}
+		#livraison {
+			font-size: 25px;
+			border-radius: 5px;
+  			border-color: black;
+		}
+		#valider {
+			font-size: 25px;
+			border-radius: 5px;
+  			border-color: black;
+		}
+}
