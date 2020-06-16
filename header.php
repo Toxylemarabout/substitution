@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 
 if (empty($_SESSION)) {
 
@@ -55,7 +56,7 @@ echo "
       </li>
 
       <li class='nav-item active text-right'>
-        <a class='nav-link' href='#'>Déconnexion</a>
+        <a class='nav-link' href='scriptDeconnexion.php'>Déconnexion</a>
       </li>
 
     </ul>
@@ -85,7 +86,7 @@ echo "
       </li>
 
       <li class='nav-item active text-right'>
-        <a class='nav-link' href='#'>Déconnexion</a>
+        <a class='nav-link' href='scriptDeconnexion.php'>Déconnexion</a>
       </li>
 
     </ul>
