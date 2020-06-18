@@ -1,13 +1,6 @@
 <?php
 
 include 'connexionDB.php';
-session_start();
-if ( (empty($_SESSION['statutAdmin'])) || ($_SESSION['statutAdmin']==0 ) ) 
-    { header('HTTP/1.1 404 Not Found'); die; }
-
-else if ($_SESSION['statutAdmin']==1) {
-
-
 
     if (isset($_POST['identifiant'])) $identifiant = $_POST['identifiant'];
     else      $identifiant = "";
@@ -45,6 +38,5 @@ else if ($_SESSION['statutAdmin']==1) {
         }
     }
 
-}
 
 ?>

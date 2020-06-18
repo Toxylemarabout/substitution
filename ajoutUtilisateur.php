@@ -11,7 +11,9 @@
 
     <div id="corps">
 
-         <?php include("header.php"); ?>
+        <?php include("header.php"); 
+        if ($_SESSION['statutAdmin'] == 1) 
+            { echo '         
 
         <div class="container">
             
@@ -48,7 +50,7 @@
                                     </p>
 
                                     <p class="login button"> 
-                                        <input type="submit" value="S'inscire"/> 
+                                        <input type="submit" value="Inscire"/> 
                                     </p>
 
                                 </form>
@@ -57,8 +59,11 @@
                     </div>
                 </div>  
             </section>
-        </div>
-
+        </div> ';
+ 
+            }
+        else { header("Location: ./index.php");}
+        ?>
         
     </div>
     
