@@ -43,7 +43,7 @@
         </div> ';
 
 
-                                            ///// table credit : GhostInTheSecureShell ; stackOverflow  ////
+                                            ///// table credit : GhostInTheSecureShell ; stackOverflow ////
     function build_table($array){
     // start table
     $html = '<table>';
