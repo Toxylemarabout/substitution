@@ -17,9 +17,7 @@
             
             { echo " 
 
-            <a href='ajoutUtilisateur.php'>Page d'ajout d'utilisateurs</a> <br>
-            <br>
-            <a href='suppressionUtilisateur.php'>Page de suppression d'utilisateurs</a> <br>
+            <a href='gestionUtilisateur.php'>Page de gestion des utilisateurs</a> <br>
             <br>
             <a href='#'>gestion de produits</a> <br>
             <br>
