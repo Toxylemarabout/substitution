@@ -9,17 +9,17 @@ include 'connexionDB.php';
     if (isset($_POST['statutAdmin'])) $statutAdmin = $_POST['statutAdmin'];
     else      $statutAdmin = $_POST['statutAdmin'];
 
-    //Sécurité, mais le formulaire est censé empêcher les envois vides
+        //Sécurité, mais le formulaire est censé empêcher les envois vides
     if (empty($mdp)) {
         echo '<script> alert("Veuillez entrer un mot de passe");</script>';
     } else if (empty($identifiant)) {
         echo '<script> alert("Veuillez entrer un identifiant");</script>';
 
-    } else {
+      } else {
 
         try {
             $req = $dbh->prepare('SELECT identifiant FROM utilisateurs WHERE identifiant = :identifiant');
-            $req->bindParam(':identifiant', $identifiant);
+                $req->bindParam(':identifiant', $identifiant);
             $req->execute();
 
             if ($req->fetch()['identifiant']== $identifiant) {
@@ -37,6 +37,5 @@ include 'connexionDB.php';
             die('Erreur : ' . $e->getMessage());
         }
     }
-
 
 ?>
