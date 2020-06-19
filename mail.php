@@ -4,8 +4,11 @@
 
 <?php
 
-$message= "Partenaire : ".$_POST['partenaire']."<br> Produit : ".$_POST['product']."<br> Quantité : ".$_POST['quantite']."<br> Adresse de livraison : ".$_POST['livraison']."<br>";
-mail('gerald.montet@viacesi.fr', 'Commande', $message);
+$message= "Partenaire : ".$_POST['partenaire']." Produit : ".$_POST['product']." ; Quantité : ".$_POST['quantite']." ; Adresse de livraison : ".$_POST['livraison'];
+
+
+mail('gerald.montet@viacesi.fr', 'Commande' $_POST['partenaire'] , $message);
+
 
 ?>
 
