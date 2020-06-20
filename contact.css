@@ -1,0 +1,20 @@
+#nom {
+position: absolute;
+  left: 41%;
+  right: 0;
+  top: 20%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+#demande{
+position: absolute;
+  left: 41%;
+  right: 0;
+  top: 30%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
+
+}
