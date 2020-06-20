@@ -1,9 +1,8 @@
-#nom {
+#nom{
 position: absolute;
   left: 41%;
   right: 0;
-  top: 20%;
-  max-width: 400px;
+  top: 30%;
   border-radius: 5px;
   border-color: black;
 }
@@ -12,9 +11,19 @@ position: absolute;
 position: absolute;
   left: 41%;
   right: 0;
-  top: 30%;
-  max-width: 400px;
+  top: 40%;
   border-radius: 5px;
   border-color: black;
 
+}
+
+
+#valider {
+position: absolute;
+  left: 46%;
+  right: 0;
+  top: 60%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: black;
 }
