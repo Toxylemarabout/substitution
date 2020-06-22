@@ -12,14 +12,14 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
-<?php
-include("header.php");
-?>
 <body>
+  <?php
+  include("header.php");
+  ?>
   <div class="content-wrapper">
     <img src="./img/clé2.png" class="img-fluid" alt="Responsive image">
     <div class="text-wrapper"><h1>Projet Solidarity Bond</h1></div>
-    <div class="text-wrapper1 text-center btn-position"><button type="button" class="btn btn-primary">Inscription Gratuite</button></div>
+    <div class="text-wrapper1 text-center btn-position"><button type="button" class="btn btn-primary">Contacte nous !</button></div>
   </div>
   
   <div class="container">
