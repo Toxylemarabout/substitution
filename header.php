@@ -17,9 +17,15 @@ echo "
   <div class='collapse navbar-collapse' id='navbarSupportedContent'>
     <ul class='navbar-nav ml-auto'>
 
-      <li class='nav-item active text-right'>
+    <li class='nav-item active text-left'>
         <a class='nav-link' href='index.php'>Accueil</a>
       </li>
+
+    <li class='nav-item active'>
+        <a class='nav-link' href='#''>A propos<span class='sr-only'>(current)</span></a>
+      </li>
+
+      
 
       <li class='nav-item active text-right'>
         <a class='nav-link' href='pageConnexion.php'>Connexion</a>
@@ -46,6 +52,10 @@ echo "
 
   <div class='collapse navbar-collapse' id='navbarSupportedContent'>
     <ul class='navbar-nav ml-auto'>
+
+    <li class='nav-item active'>
+        <a class='nav-link' href='#''> A propos <span class='sr-only'>(current)</span></a>
+      </li>
 
       <li class='nav-item active text-right'>
         <a class='nav-link' href='index.php'>Accueil</a>
@@ -80,6 +90,10 @@ echo "
 
   <div class='collapse navbar-collapse' id='navbarSupportedContent'>
     <ul class='navbar-nav ml-auto'>
+
+    <li class='nav-item active'>
+        <a class='nav-link' href='#''> A propos <span class='sr-only'>(current)</span></a>
+      </li>
 
       <li class='nav-item active text-right'>
         <a class='nav-link' href='index.php'>Accueil</a>

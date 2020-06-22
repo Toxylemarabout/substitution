@@ -47,4 +47,11 @@
 
 .M-text{
     font-family: 'Century Gothic';
+    font-size: 115%
 }
+
+.question{
+    font-size: 150%; 
+    font-family: 'Century Gothic';
+}
+
