@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Suppression d'utilisateur</title>
+        <title>Page d'administration</title>
     </head>
 
     <body>    
@@ -19,7 +19,7 @@
 
             <a href='gestionUtilisateur.php'>Page de gestion des utilisateurs</a> <br>
             <br>
-            <a href='#'>gestion de produits</a> <br>
+            <a href='gestionProduits.php'>Page de gestion des produits</a> <br>
             <br>
             <a href='#'>visualisation des commandes</a>
 
