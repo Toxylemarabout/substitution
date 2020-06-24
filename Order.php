@@ -14,11 +14,13 @@
 <body>
 <?php
 include("header.php");
-?>
 
-<?php
-include("footer.php");
-?>
+
+
+if (isset($_SESSION['statutAdmin'])) {
+echo '
+
+
 
 <form name="Commande" action="mail.php" method="post">
 <input name="partenaire" type="text" id="partenaire" placeholder="Nom de la société" size="30">
@@ -40,7 +42,17 @@ include("footer.php");
 function myFunction() {
   alert("Votre commande a été effectué");
 }
-</script>
+</script>';
+
+}
+
+else 	 {
+	header("Location: ./index.php");
+}
 
 
+
+?>
 </body>
+<?php include("footer.php"); ?>
+</html>
