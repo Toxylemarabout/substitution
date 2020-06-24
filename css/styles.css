@@ -1,0 +1,57 @@
+.content-wrapper img{
+    width: 100%;
+}
+
+.text-wrapper{
+    width: 100%;
+    position: absolute;
+    margin-top: -40%;
+}
+ 
+.text-wrapper h1{
+    text-align: center;
+    color: black;
+    font-size: 10vw;
+    font-family: 'Century Gothic';
+}
+
+.btn-position{
+    width: 100%;
+    position: absolute;
+    margin-top: -8%;
+}
+
+.text-position1{
+	font-size: 115%; 
+    margin-top: 9%;
+    font-family: 'Century Gothic';
+}
+
+.text-position2{
+	font-size: 115%; 
+    margin-top: 5%;
+    font-family: 'Century Gothic';
+}
+
+.text-position3{
+	font-size: 115%; 
+    margin-top: 5%;
+    font-family: 'Century Gothic';
+}
+
+.text-position4{
+	font-size: 115%; 
+    margin-top: 8%;
+    font-family: 'Century Gothic';
+}
+
+.M-text{
+    font-family: 'Century Gothic';
+    font-size: 115%
+}
+
+.question{
+    font-size: 150%; 
+    font-family: 'Century Gothic';
+}
+
