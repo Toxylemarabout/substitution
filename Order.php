@@ -12,23 +12,30 @@
 </head>
 
 <body>
+
 <?php
+
 include("header.php");
-
-
+include("connexionDB.php");
 
 if (isset($_SESSION['statutAdmin'])) {
-echo '
 
+$prd = $dbh->prepare('SELECT Nom FROM produits');
+$prd->execute();
+$rsl = $prd->fetchAll(PDO::FETCH_CLASS);
 
+echo ' <form name="Commande" action="mail.php" method="post">
 
-<form name="Commande" action="mail.php" method="post">
-<input name="partenaire" type="text" id="partenaire" placeholder="Nom de la société" size="30">
+ <select name="product" id="product-select">
+ <option value="">Choisissez un produit :</option>';    
 
-<select name="product" id="product-select">
-	<option value="">Choisissez un produit :</option>
-	<option value="Cle-de-maniement-sans-contact">Clé de maniement sans contact</option>
-	<option value="Sur-mesure">Produit sur mesure</option>
+	foreach ($rsl as $cle => $val) {
+		foreach ($val as $cle2 => $val2) {
+			echo  '<option value=' . $val2 . '>' . $val2 .'</option>';
+		}
+	}
+
+    echo ' <option value="Sur-mesure">Produit sur mesure</option>
 
 <input name="quantite" type="text" id="quantite" placeholder="Quantité" size="30">
 
@@ -40,7 +47,7 @@ echo '
 </form>
 <script>
 function myFunction() {
-  alert("Votre commande a été effectué");
+  alert("Votre commande a été effectuée");
 }
 </script>';
 
@@ -54,5 +61,4 @@ else 	 {
 
 ?>
 </body>
-<?php include("footer.php"); ?>
 </html>

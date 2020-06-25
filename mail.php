@@ -1,13 +1,14 @@
 <?php
 include 'connexionDB.php' ;
-
+session_start();
 //mail
-$message= "Partenaire : ".$_POST['partenaire']." Produit : ".$_POST['product']." ; Quantité : ".$_POST['quantite']." ; Adresse de livraison : ".$_POST['livraison'];
-mail('gerald.montet@viacesi.fr', 'Commande' $_POST['partenaire'] , $message);
+
+//$message= "Partenaire : ".$_POST['partenaire']." Produit : ".$_POST['product']." ; Quantité : ".$_POST['quantite']." ; Adresse de livraison : ".$_POST['livraison'];
+//mail('gerald.montet@viacesi.fr', 'Commande' $_POST['partenaire'] , $message);
 
 //envoi a la BDD
 
-    if (isset($_POST['partenaire'])) $partenaire = $_POST['partenaire'];
+    if (isset($_SESSION['identifiant'])) $partenaire = $_SESSION['identifiant'];
     else      $partenaire = "";
     if (isset($_POST['product'])) $product = $_POST['product'];
     else      $product = "";
@@ -25,26 +26,30 @@ mail('gerald.montet@viacesi.fr', 'Commande' $_POST['partenaire'] , $message);
       }
     else if (empty($quantite)) {
         echo '<script> alert("Veuillez entrer une quantité");</script>';
-
+      }
     else if (empty($livraison)) {
         echo '<script> alert("Veuillez entrer une adresse de livraison");</script>';
       }
 
        else {
-
+        try{
                 $req = $dbh->prepare("INSERT INTO commandes (utilisateur, produit, quantite, adresseLivraison, id_produit, ID) SELECT identifiant, Nom, :quantite, :livraison, id_produit, ID FROM produits JOIN utilisateurs ON 1 WHERE identifiant = :partenaire AND Nom = :product");
-                $req->bindParam(':partenaire', $partenaire);
-                $req->bindParam(':product', $product);
-                $req->bindParam(':quantite', $quantite);
-                $req->bindParam(':livraison', $livraison);                
+                $req->bindParam(':partenaire', $partenaire, PDO::PARAM_STR);
+                $req->bindParam(':product', $product, PDO::PARAM_STR);
+                $req->bindParam(':quantite', $quantite, PDO::PARAM_INT);
+                $req->bindParam(':livraison', $livraison, PDO::PARAM_STR);                
                 $req->execute();
                 echo "<script> window.location = './index.php';</script>";
-            }
+
+                //echo $_SESSION['identifiant'] . "  ". $_POST['product'] . "  " . $_POST['quantite']. "  " . $_POST['livraison']; 
+                
+                $row = $req->fetch(PDO::FETCH_NUM);
+                for ($i = 0; $i<6; $i++) {echo $row[$i]."   ";}
+            
         } catch (Exception $e){
             echo '<script> alert("execution de la requette impossible");</script>';
             die('Erreur : ' . $e->getMessage());
         }
     }
-
 
 ?>
