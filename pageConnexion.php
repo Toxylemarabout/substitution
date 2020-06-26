@@ -36,14 +36,14 @@
 
                     <div>
                         <label class="label-connexion font-formulaire"><B>Identifiant :  </B></label>
-                        <input class="input-connexion" name="Identifant" required="required" type="text" placeholder="Identifant"/>
+                        <input class="input-connexion" name="identifiant" required="required" type="text" placeholder="Identifant"/>
                     </div>
                     <div>
                         <label class="label-connexion font-formulaire"><p><B>Password : </B></p></label>
-                        <input class="input-connexion" name="motDePasse" required="required" type="password" placeholder="Mot de passe" /> 
+                        <input class="input-connexion" name="password" required="required" type="password" placeholder="Mot de passe" /> 
                     </div>
                     <div>
-                        <input type="submit" class="btn btn-dark" value="Connexion" /> 
+                        <input type="submit" class="btn btn-dark" value="Connexion"/> 
                     </div>
                     <div class="mt-2">
                         Pas encore inscrit ?
