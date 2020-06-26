@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Gestion de produits</title>
+        <link href="./img/logo.ico" rel="icon">
     </head>
 
     <body>    

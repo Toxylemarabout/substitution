@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Page d'administration</title>
+        <link href="./img/logo.ico" rel="icon">
     </head>
 
     <body>    
