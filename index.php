@@ -21,7 +21,7 @@
   <div class="content-wrapper">
     <img src="./img/clé2.png" class="img-fluid" alt="Responsive image">
     <div class="text-wrapper"><h1>Projet Solidarity Bond</h1></div>
-    <div class="text-wrapper1 text-center btn-position"><button type="button" class="btn btn-primary">Contacte nous !</button></div>
+    <div class="text-wrapper1 text-center btn-position"><a type="button" class="btn btn-primary" href="Formulaire.php">Contacte nous !</a></div>
   </div>
   
   <div class="container">

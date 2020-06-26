@@ -22,7 +22,7 @@ echo "
       </li>
 
     <li class='nav-item active'>
-        <a class='nav-link' href='#''>A propos<span class='sr-only'>(current)</span></a>
+        <a class='nav-link' href='Nous.php'>A propos<span class='sr-only'>(current)</span></a>
       </li>
 
       
@@ -54,11 +54,15 @@ echo "
     <ul class='navbar-nav ml-auto'>
 
     <li class='nav-item active'>
-        <a class='nav-link' href='#''> A propos <span class='sr-only'>(current)</span></a>
+        <a class='nav-link' href='Nous.php'> A propos <span class='sr-only'>(current)</span></a>
       </li>
 
       <li class='nav-item active text-right'>
         <a class='nav-link' href='index.php'>Accueil</a>
+      </li>
+
+      <li class='nav-item active text-right'>
+        <a class='nav-link' href='Order.php'>Commande</a>
       </li>
 
       <li class='nav-item active text-right'>
@@ -92,11 +96,15 @@ echo "
     <ul class='navbar-nav ml-auto'>
 
     <li class='nav-item active'>
-        <a class='nav-link' href='#''> A propos <span class='sr-only'>(current)</span></a>
+        <a class='nav-link' href='Nous.php'> A propos <span class='sr-only'>(current)</span></a>
       </li>
 
       <li class='nav-item active text-right'>
         <a class='nav-link' href='index.php'>Accueil</a>
+      </li>
+
+      <li class='nav-item active text-right'>
+        <a class='nav-link' href='Order.php'>Commande</a>
       </li>
 
       <li class='nav-item active text-right'>

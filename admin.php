@@ -21,7 +21,7 @@
             <br>
             <a href='gestionProduits.php'>Page de gestion des produits</a> <br>
             <br>
-            <a href='#'>visualisation des commandes</a>
+            <a href='gestionCommandes.php'>Page de visualisation des commandes</a>
 
             ";}
 
