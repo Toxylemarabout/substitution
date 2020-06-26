@@ -16,6 +16,8 @@
   <?php
   include("header.php");
   ?>
+
+  
   <div class="content-wrapper">
     <img src="./img/clé2.png" class="img-fluid" alt="Responsive image">
     <div class="text-wrapper"><h1>Projet Solidarity Bond</h1></div>
@@ -75,17 +77,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
   <?php

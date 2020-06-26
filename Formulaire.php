@@ -26,14 +26,14 @@
     <div class="text-center mt-4 mb-4">
      <form class="form-contact" action="scriptFormulaire.php" method="post" autocomplete="on">
       <br>
-        <label class="label-contact" for="name">Nom :</label>
+        <label class="label-contact font-formulaire"><B>Nom :</B></label>
         <input class="input-contact" type="text" name="nom" required>
       <br>
-        <label class="label-contact" for="mail">Email :</label>
+        <label class="label-contact font-formulaire"><B>Email :</B></label>
         <input class="input-contact" type="email"  placeholder="exemple@exmple.fr" name="email" required>
       <br>
       
-        <label class="label-contact" for="msg">Message :</label>
+        <label class="label-contact font-formulaire"><B>Message :</B></label>
         <textarea class="textarea-formulaire" name="message" placeholder="Ecrivez votre message ici" required></textarea>
       <br>
       <input type="submit" class="btn btn-dark">
