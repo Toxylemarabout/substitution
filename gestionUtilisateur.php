@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Ajout d'utilisateur</title>
+        <link href="./img/logo.ico" rel="icon">
     </head>
 
     <body>    

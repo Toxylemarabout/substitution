@@ -5,7 +5,7 @@
 	<!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  
+  <link href="./img/logo.ico" rel="icon">
 
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,10 +16,12 @@
   <?php
   include("header.php");
   ?>
+
+  
   <div class="content-wrapper">
     <img src="./img/clé2.png" class="img-fluid" alt="Responsive image">
     <div class="text-wrapper"><h1>Projet Solidarity Bond</h1></div>
-    <div class="text-wrapper1 text-center btn-position"><button type="button" class="btn btn-primary">Contacte nous !</button></div>
+    <div class="text-wrapper1 text-center btn-position"><a type="button" class="btn btn-primary" href="Formulaire.php">Contactez-nous !</a></div>
   </div>
   
   <div class="container">
@@ -75,17 +77,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
   <?php

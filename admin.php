@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Page d'administration</title>
+        <link href="./img/logo.ico" rel="icon">
     </head>
 
     <body>    
@@ -21,7 +22,7 @@
             <br>
             <a href='gestionProduits.php'>Page de gestion des produits</a> <br>
             <br>
-            <a href='#'>visualisation des commandes</a>
+            <a href='gestionCommandes.php'>Page de visualisation des commandes</a>
 
             ";}
 
