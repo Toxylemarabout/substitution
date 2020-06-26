@@ -66,6 +66,10 @@
                                         <input id="username" name="identifiant" required="required" type="text" minlength="2" required pattern="([A-z0-9À-ž\s]){2,}" />
                                     </p>
 
+                                    <p class="bouton d\'envoi"> 
+                                        <input type="submit" value="Supprimer"/> 
+                                    </p>
+
                                 </form>
                              </div>                             
                         

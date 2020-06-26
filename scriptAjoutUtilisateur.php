@@ -7,13 +7,13 @@ include 'connexionDB.php';
     if (isset($_POST['password'])) $mdp = $_POST['password'];
     else      $mdp = "";
     if (isset($_POST['statutAdmin'])) $statutAdmin = $_POST['statutAdmin'];
-    else      $statutAdmin = $_POST['statutAdmin'];
+    else      $statutAdmin = 0;
 
         //Sécurité, mais le formulaire est censé empêcher les envois vides
     if (empty($mdp)) {
-        echo '<script> alert("Veuillez entrer un mot de passe");</script>';
+        echo '<script> alert("Veuillez entrer un mot de passe"); window.location = "./index.php"; </script>';
     } else if (empty($identifiant)) {
-        echo '<script> alert("Veuillez entrer un identifiant");</script>';
+        echo '<script> alert("Veuillez entrer un identifiant"); window.location = "./index.php"; </script>';
 
       } else {
 
