@@ -52,29 +52,29 @@ position: absolute;
 
 /*@media screen and (max-width: 992px){
 
-		#partenaire {
-			font-size: 25px;
-			border-radius: 5px;
-  			border-color: black;
-		}
-		#product-select {
-			font-size: 25px;
-			border-radius: 5px;
-  			border-color: black;
-		}
-		#quantite{
-			font-size: 25px;
-			border-radius: 5px;
-  			border-color: black;
-		}
-		#livraison {
-			font-size: 25px;
-			border-radius: 5px;
-  			border-color: black;
-		}
-		#valider {
-			font-size: 25px;
-			border-radius: 5px;
-  			border-color: black;
-		}
+    #partenaire {
+      font-size: 25px;
+      border-radius: 5px;
+        border-color: black;
+    }
+    #product-select {
+      font-size: 25px;
+      border-radius: 5px;
+        border-color: black;
+    }
+    #quantite{
+      font-size: 25px;
+      border-radius: 5px;
+        border-color: black;
+    }
+    #livraison {
+      font-size: 25px;
+      border-radius: 5px;
+        border-color: black;
+    }
+    #valider {
+      font-size: 25px;
+      border-radius: 5px;
+        border-color: black;
+    }
 }
