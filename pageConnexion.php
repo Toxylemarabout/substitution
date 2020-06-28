@@ -27,40 +27,37 @@
     </div>
 
     <div class="container">
+        <div class="M-text"><h1><U><B>Connexion</B></U></h1></div>
+        <div class="text-center mt-4 mb-4">
+            <form method="post" action="scriptConnexion.php" class="form-connexion" autocomplete="on">
 
+                <div>
+                    <label class="label-connexion font-formulaire"><B>Identifiant :  </B></label>
+                    <input class="input-connexion" name="identifiant" required="required" type="text" placeholder="Identifant"/>
+                </div>
+                <div>
+                    <label class="label-connexion font-formulaire"><p><B>Password : </B></p></label>
+                    <input class="input-connexion" name="password" required="required" type="password" placeholder="Mot de passe" /> 
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-dark" value="Connexion"/> 
+                </div>
+                <div class="mt-2">
+                    Pas encore inscrit ?
+                    <a href="http://www.geraldmontet.fr/.php" class="to_register"><U>Contactez Nous !</U></a>
 
-        <div id="container" >
-            <div class="M-text"><h1><U><B>Connexion</B></U></h1></div>
-            <div class="text-center mt-4 mb-4">
-                <form method="post" action="scriptConnexion.php" class="form-connexion" autocomplete="on">
-
-                    <div>
-                        <label class="label-connexion font-formulaire"><B>Identifiant :  </B></label>
-                        <input class="input-connexion" name="identifiant" required="required" type="text" placeholder="Identifant"/>
-                    </div>
-                    <div>
-                        <label class="label-connexion font-formulaire"><p><B>Password : </B></p></label>
-                        <input class="input-connexion" name="password" required="required" type="password" placeholder="Mot de passe" /> 
-                    </div>
-                    <div>
-                        <input type="submit" class="btn btn-dark" value="Connexion"/> 
-                    </div>
-                    <div class="mt-2">
-                        Pas encore inscrit ?
-                        <a href="http://www.geraldmontet.fr/.php" class="to_register"><U>Contactez Nous !</U></a>
-
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 
 
 
-    
 
-    <?php
-    include("footer.php");
-    ?>
+
+<?php
+include("footer.php");
+?>
 </body>
 </html>
