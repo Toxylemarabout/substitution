@@ -27,6 +27,7 @@
     </div>
 
     <div class="container">
+
         <div class="M-text"><h1><U><B>Connexion</B></U></h1></div>
         <div class="text-center mt-4 mb-4">
             <form method="post" action="scriptConnexion.php" class="form-connexion" autocomplete="on">
@@ -48,9 +49,10 @@
 
                 </div>
             </form>
+
         </div>
     </div>
-</div>
+
 
 
 

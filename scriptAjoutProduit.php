@@ -11,15 +11,14 @@ include 'connexionDB.php';
 
         //Sécurité, mais le formulaire est censé empêcher les envois vides
     if (empty($description)) {
-        echo '<script> alert("Veuillez entrer une description");</script>';
+        echo '<script> alert("Veuillez entrer une description"); window.location = "./index.php"; </script>';
     }
     else if (empty($nomProduit)) {
-        echo '<script> alert("Veuillez entrer un nom de produit");</script>';
+        echo '<script> alert("Veuillez entrer un nom de produit"); window.location = "./index.php"; </script>';
 
       }
-
     else if (empty($urlImage)) {
-        echo '<script> alert("Veuillez entrer une url d\'image");</script>';
+        echo '<script> alert("Veuillez entrer une url d\'image"); window.location = "./index.php"; </script>';
 
       }
 

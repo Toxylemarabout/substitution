@@ -8,6 +8,8 @@ try {
     if (isset($_POST['password'])) $mdp = $_POST['password'];
     else      $mdp = "";
 
+if ($mdp == "") {echo " <script> window.location = './index.php'; </script>";}
+else {
     $req = $dbh->prepare('SELECT password, identifiant, id, statutAdmin FROM utilisateurs WHERE identifiant = :identifiant');
     $req->bindParam(':identifiant', $identifiant);
     $req->execute();
@@ -19,17 +21,21 @@ try {
         echo '<script>alert("connexion réussie")</script>';
         $_SESSION['identifiant'] = $identifiant;
         $_SESSION['statutAdmin'] = $admin;
+        unset($identifiant);
+        unset($admin);
+        unset($mdp);
         header('Location: index.php');
+
     } else {
 
 echo "<script>alert('Identifiant ou mot de passe incorrect'); window.location = './pageConnexion.php';</script>";
     }
-} catch (Exception $e){
+} } catch (Exception $e){
     echo '<script> alert("execution de la requette impossible");</script>';
     die('Erreur : ' . $e->getMessage());
 }
 
-
+  
 
 
 ?>

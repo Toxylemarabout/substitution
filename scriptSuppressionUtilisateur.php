@@ -7,7 +7,7 @@ include 'connexionDB.php';
     else      $identifiant = "";
 
     if (empty($identifiant)) {
-        echo '<script> alert("Veuillez entrer un identifiant");</script>';
+        echo '<script> alert("Veuillez entrer un identifiant");window.location = "./index.php";</script>';
         }
 
     else {

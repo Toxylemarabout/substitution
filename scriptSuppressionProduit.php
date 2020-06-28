@@ -7,7 +7,7 @@ include 'connexionDB.php';
     else      $nomProduit = "";
 
     if (empty($nomProduit)) {
-        echo '<script> alert("Veuillez entrer un nom de produit");</script>';
+        echo '<script> alert("Veuillez entrer un nom de produit"); window.location = "./index.php"; </script>';
         }
 
     else {
