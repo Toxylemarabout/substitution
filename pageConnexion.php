@@ -45,7 +45,7 @@
                 </div>
                 <div class="mt-2">
                     Pas encore inscrit ?
-                    <a href="http://www.geraldmontet.fr/.php" class="to_register"><U>Contactez Nous !</U></a>
+                    <a href="http://www.geraldmontet.fr/Formulaire.php" class="to_register"><U>Contactez Nous !</U></a>
 
                 </div>
             </form>

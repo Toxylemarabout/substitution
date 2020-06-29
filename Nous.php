@@ -41,7 +41,7 @@
 			</div>
 			<div class="col-sm-8">
 				<div class="M-text mt-5"><h1><U><B>Quelle est notre démarche ?</B></U></h1>
-					<div class="mt-5 M-text"><p>Afin de valider notre dernière année de cycle préparatoire d'école d'ingénieur et à cause du contexte actuel, le Cesi nous à charger de mener un projet nommé Solidarity Bond. Il consiste à développer un objet et à le donner à differents acteurs que ce soit des entreprises commme des associations pour lutter contre le COVID-19.</p>
+					<div class="mt-5 M-text"><p>Afin de valider notre dernière année de cycle préparatoire d'école d'ingénieur et à cause du contexte actuel, le Cesi nous à charger de mener un projet nommé Solidarity Bond. Il consiste à développer un objet et à le distribuer à differents acteurs que ce soit des entreprises commme des associations pour lutter contre le COVID-19.</p>
 					</div>
 				</div>
 			</div>
@@ -67,7 +67,7 @@
 			</div>
 			<div class="col-sm-8">
 				<div class="M-text mt-5"><h1><U><B>Comment allez-vous être livré ?</B></U></h1>
-					<div class="mt-5 M-text"><p>Dès la réception de votre commande, si on manque de stock la production est instantanément lancée. Notre objectif est un délais maximum deux semaines à partir de la réception de votre commande. Soyez sûr que nous faisons au plus vite !</p>
+					<div class="mt-5 M-text"><p>Dès la réception de votre commande, si on manque de stock la production est instantanément lancée. Notre objectif est un délais maximum de deux semaines à partir de la réception de votre commande. Soyez sûr que nous faisons au plus vite !</p>
 					</div>
 				</div>
 			</div>
