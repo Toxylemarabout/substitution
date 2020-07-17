@@ -67,7 +67,7 @@
 	<div class="container">
 		<form class="form-contact mb-5" name="Commande" action="mail.php" method="post">
 			<div class="form-group text-center">
-				<div class="M-text"><h1><U><B>Votre Commande</B></U></h1></div>
+				<div class="M-text"><h1><U><B>Ajout au panier</B></U></h1></div>
 				<select name="product" id="product-select">
 					<option value="">Choisissez un produit :</option>
 					';    
@@ -87,18 +87,6 @@
 		<input class="form-control" name="quantite" type="number" min="1" max="500" id="quantite" placeholder="Quantité" size="30">
 		<small class="form-text text-muted">La quantité doit être comprise entre 1 et 500.</small>
 	</div>
-	<div class="form-group">
-		<label class="font-formulaire"><B>Livraison : </B></label>
-		<input class="form-control" name="livraison" type="text" id="livraison" placeholder="Adresse de livraison" size="30">
-	</div>
-	<div class="form-group">
-		<label class="font-formulaire"><B>Ville : </B></label>
-		<input class="form-control" name="livraison" type="text" id="livraison" placeholder="Ville" size="15">
-	</div>
-	<div class="form-group">
-		<label class="font-formulaire"><B>Code Postale : </B></label>
-		<input class="form-control" name="livraison" type="text" id="livraison" placeholder="Code Postale" size="5">
-	</div>
 	<div class="form-group text-center">
 		<input class="btn btn-dark" name="envoi" type="submit" value="Valider" id="valider"  onclick="myFunction()">
 	</div>
@@ -108,7 +96,6 @@
 
 
 ';
-
 }
 
 else 	 {

@@ -66,6 +66,10 @@ echo "
       </li>
 
       <li class='nav-item active text-right'>
+        <a class='nav-link' href='Panier.php'>Panier</a>
+      </li>
+
+      <li class='nav-item active text-right'>
         <a class='nav-link' href='admin.php'>Admin</a>
       </li>
 
@@ -105,6 +109,10 @@ echo "
 
       <li class='nav-item active text-right'>
         <a class='nav-link' href='Order.php'>Commande</a>
+      </li>
+
+      <li class='nav-item active text-right'>
+        <a class='nav-link' href='Panier.php'>Panier</a>
       </li>
 
       <li class='nav-item active text-right'>
