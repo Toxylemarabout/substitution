@@ -20,9 +20,9 @@
             
             <section>               
 
-                <div id="container" >
+                <div class="container" >
 
-                    <div id="wrapper">
+                    
 
 
                         
@@ -57,7 +57,7 @@
                                 </form>
                              </div>
                         
-                    </div>
+                    
                 </div>  
             </section>
         </div> ';
