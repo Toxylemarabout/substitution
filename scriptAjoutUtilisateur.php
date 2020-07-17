@@ -1,10 +1,11 @@
 <?php
 
 include 'connexionDB.php';
+include 'encryption.php';
 
     if (isset($_POST['identifiant'])) $identifiant = $_POST['identifiant'];
     else      $identifiant = "";
-    if (isset($_POST['password'])) $mdp = $_POST['password'];
+    if (isset($_POST['password'])) $mdp = cryptageHash($_POST['password']);
     else      $mdp = "";
     if (isset($_POST['statutAdmin'])) $statutAdmin = $_POST['statutAdmin'];
     else      $statutAdmin = 0;

@@ -1,11 +1,11 @@
 <?php
 
   include 'connexionDB.php';
-
+  include 'encryption.php';
 try {
     if (isset($_POST['identifiant'])) $identifiant = $_POST['identifiant'];
     else      $identifiant = "";
-    if (isset($_POST['password'])) $mdp = $_POST['password'];
+    if (isset($_POST['password'])) $mdp = cryptageHash($_POST['password']);
     else      $mdp = "";
 
 if ($mdp == "") {echo " <script> window.location = './index.php'; </script>";}
