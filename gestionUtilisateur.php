@@ -30,7 +30,7 @@
  
 <div class="container">
 
-    <div class="M-text"><h1><U><B>Inscritpion</B></U></h1></div>
+    <div class="M-text text-center"><h1><U><B>Inscritpion</B></U></h1></div>
     <div class="text-center mt-4 mb-4">
         <form method="post" action="scriptAjoutUtilisateur.php" class="form-connexion" autocomplete="on">
 
@@ -61,7 +61,7 @@
         </form>
 
     </div>
-    <div class="M-text"><h1><U><B>Utilisateur a supprimer :</B></U></h1></div>
+    <div class="M-text text-center"><h1><U><B>Utilisateur a supprimer :</B></U></h1></div>
     <div class="text-center mt-4 mb-4">
         <form method="post" action="scriptSuppressionUtilisateur.php" class="form-connexion" autocomplete="on">
             <div> 
