@@ -14,8 +14,6 @@ session_start();
     else      $product = "";
     if (isset($_POST['quantite'])) $quantite = $_POST['quantite'];
     else      $quantite = "";
-    if (isset($_POST['livraison'])) $livraison = $_POST['livraison'];
-    else      $livraison = "";    
 
         //Sécurité, mais le formulaire est censé empêcher les envois vides
     if (empty($partenaire)) {
@@ -27,24 +25,25 @@ session_start();
     else if (empty($quantite)) {
         echo '<script> alert("Veuillez entrer une quantité"); window.location = \'./Order.php\';</script>';
       }
-    else if (empty($livraison)) {
-        echo '<script> alert("Veuillez entrer une adresse de livraison"); window.location = \'./Order.php\';</script>';
-      }
 
        else {
         try{
-                $req = $dbh->prepare("INSERT INTO commandes (utilisateur, produit, quantite, adresseLivraison, id_produit, ID) SELECT identifiant, Nom, :quantite, :livraison, id_produit, ID FROM produits JOIN utilisateurs ON 1 WHERE identifiant = :partenaire AND Nom = :product LIMIT 1");
-                $req->bindParam(':partenaire', $partenaire, PDO::PARAM_STR);
+                $req = $dbh->prepare("SELECT Nom, id_produit FROM produits WHERE Nom = :product");
                 $req->bindParam(':product', $product, PDO::PARAM_STR);
-                $req->bindParam(':quantite', $quantite, PDO::PARAM_INT);
-                $req->bindParam(':livraison', $livraison, PDO::PARAM_STR);                
                 $req->execute();
-                echo "<script> alert('votre commande a été effectuée') window.location = './index.php';</script>";
+                $result = $req->fetch(PDO::FETCH_NUM);
+                $id = $result[1] - 1 ;
 
-                //echo $_SESSION['identifiant'] . "  ". $_POST['product'] . "  " . $_POST['quantite']. "  " . $_POST['livraison']; 
-                //$row = $req->fetch(PDO::FETCH_NUM);
-                //for ($i = 0; $i<6; $i++) {echo $row[$i]."   ";}
-            
+                #ajout d'un produit
+                
+                $_SESSION['panier'][$id] = $product;
+                if (!isset($_SESSION['quantite'][$id])) {$_SESSION['quantite'][$id] = 0;}
+                    $_SESSION['quantite'][$id] = $quantite + $_SESSION['quantite'][$id];
+
+                echo $_SESSION['panier'][$id];
+                print '          ';
+                echo $_SESSION['quantite'][$id];
+
         } catch (Exception $e){
             echo '<script> alert("execution de la requette impossible");</script>';
             die('Erreur : ' . $e->getMessage());

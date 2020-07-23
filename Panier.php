@@ -43,26 +43,29 @@
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody> ';
 
-              <tr>
+ for ($i = 0 ; $i < count($_SESSION['quantite']); $i++){
+
+ 
+echo
+'              <tr>
                 <th scope="row" class="border-0">
                   <div class="p-2">
-                    <img src="http://placehold.it/400x400" alt="" width="70" class="img-fluid rounded"/>
                     <div class="ml-3 d-inline-block align-middle">
                       <h5 class="mb-0"><p
-                        class="text-dark d-inline-block align-middle">Nom Produit</a>
-                      </h5><span
-                      class="text-muted font-weight-normal font-italic d-block">qsdsqdqsdsqqsd</span>
+                        class="text-dark d-inline-block align-middle">'.$_SESSION["panier"][$i].'</a>
+                      </h5>
+                      <!--span class="text-muted font-weight-normal font-italic d-block">qsdsqdqsdsqqsd</span-->
                     </div>
                   </div>
                 </th>
                 <td class="border-0 align-middle text"><strong>Offert à titre gracieux</strong></td>
-                <td class="border-0 align-middle"><strong>qsdqsdsqdsqdsqdsq</strong></td>
+                <td class="border-0 align-middle"><strong>'. $_SESSION["quantite"][$i] .'</strong></td>
                 <td class="border-0 align-middle "><button type="button" class="btn btn-danger">Supprimer</button></td>
-              </tr>
-
-            </tbody>
+              </tr>';
+}
+    echo '        </tbody>
           </table>
         </div>
 
@@ -74,7 +77,7 @@
         <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Information commande</div>
         <div class="p-4">
           <p class="font-italic mb-4">Afin de terminer votre commande, merci de remplir les champs ci-dessous.</p>
-          <form name="" action="" method="post">
+          <form name="address" action="mail.php" method="post">
           <ul class="list-unstyled mb-4">
             <li class="justify-content-between py-3 border-bottom">
               <div class="form-group">

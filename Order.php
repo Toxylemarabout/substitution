@@ -65,7 +65,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<form class="form-contact mb-5" name="Commande" action="mail.php" method="post">
+		<form class="form-contact mb-5" name="Commande" action="scriptAjoutPanier.php" method="post">
 			<div class="form-group text-center">
 				<div class="M-text"><h1><U><B>Ajout au panier</B></U></h1></div>
 				<select name="product" id="product-select">
