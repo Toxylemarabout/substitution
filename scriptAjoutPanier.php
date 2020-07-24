@@ -38,11 +38,15 @@ session_start();
                 
                 $_SESSION['panier'][$id] = $product;
                 if (!isset($_SESSION['quantite'][$id])) {$_SESSION['quantite'][$id] = 0;}
-                    $_SESSION['quantite'][$id] = $quantite + $_SESSION['quantite'][$id];
+                $_SESSION['quantite'][$id] = $quantite + $_SESSION['quantite'][$id];
+                 header('Location: ./Order.php');
 
-                echo $_SESSION['panier'][$id];
+                 //unset($_SESSION['panier']);
+                 //unset($_SESSION['quantite']);
+                
+                /*echo $_SESSION['panier'][$id];
                 print '          ';
-                echo $_SESSION['quantite'][$id];
+                echo $_SESSION['quantite'][$id];*/
 
         } catch (Exception $e){
             echo '<script> alert("execution de la requette impossible");</script>';

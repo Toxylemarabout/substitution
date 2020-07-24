@@ -78,7 +78,7 @@
 				}
 			}
 
-			echo ' <option value="Sur-mesure">Produit sur mesure</option>
+			echo '
 		</select>
 	</div>
 

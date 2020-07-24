@@ -14,15 +14,15 @@ session_start();
     else      $product = "";
     if (isset($_POST['quantite'])) $quantite = $_POST['quantite'];
     else      $quantite = "";
-    if (isset($_POST['livraison'])) $livraison = $_POST['livraison'];
+    if (isset($_POST['numRue']) && isset($_POST['Ville']) && isset($_POST['Code'])) $livraison = $_POST['numRue'] . ", " . $_POST['Ville'] . "  " . $_POST['Code'];
     else      $livraison = "";    
 
         //Sécurité, mais le formulaire est censé empêcher les envois vides
     if (empty($partenaire)) {
-        echo '<script> alert("Veuillez entrer un nom d`entreprise "); window.location = \'./Order.php\';</script>';
+        echo '<script> alert("Veuillez entrer un nom d`entreprise "); window.location = \'./panier.php\';</script>';
     }
     else if (empty($product)) {
-        echo '<script> alert("Veuillez entrer un produit "); window.location = \'./Order.php\';</script>';
+        echo '<script> alert("Veuillez sélectionner un produit "); window.location = \'./panier.php\';</script>';
       }
     else if (empty($quantite)) {
         echo '<script> alert("Veuillez entrer une quantité"); window.location = \'./Order.php\';</script>';
@@ -32,7 +32,7 @@ session_start();
       }
 
        else {
-        try{
+        try{###############################################################################################################################################################
                 $req = $dbh->prepare("INSERT INTO commandes (utilisateur, produit, quantite, adresseLivraison, id_produit, ID) SELECT identifiant, Nom, :quantite, :livraison, id_produit, ID FROM produits JOIN utilisateurs ON 1 WHERE identifiant = :partenaire AND Nom = :product LIMIT 1");
                 $req->bindParam(':partenaire', $partenaire, PDO::PARAM_STR);
                 $req->bindParam(':product', $product, PDO::PARAM_STR);
@@ -40,10 +40,7 @@ session_start();
                 $req->bindParam(':livraison', $livraison, PDO::PARAM_STR);                
                 $req->execute();
                 echo "<script> alert('votre commande a été effectuée') window.location = './index.php';</script>";
-
-                //echo $_SESSION['identifiant'] . "  ". $_POST['product'] . "  " . $_POST['quantite']. "  " . $_POST['livraison']; 
-                //$row = $req->fetch(PDO::FETCH_NUM);
-                //for ($i = 0; $i<6; $i++) {echo $row[$i]."   ";}
+            ###############################################################################################################################################################
             
         } catch (Exception $e){
             echo '<script> alert("execution de la requette impossible");</script>';
