@@ -10,10 +10,7 @@ session_start();
 
     if (isset($_SESSION['identifiant'])) $partenaire = $_SESSION['identifiant'];
     else      $partenaire = "";
-    if (isset($_POST['product'])) $product = $_POST['product'];
-    else      $product = "";
-    if (isset($_POST['quantite'])) $quantite = $_POST['quantite'];
-    else      $quantite = "";
+ 
     if (isset($_POST['numRue']) && isset($_POST['Ville']) && isset($_POST['Code'])) $livraison = $_POST['numRue'] . ", " . $_POST['Ville'] . "  " . $_POST['Code'];
     else      $livraison = "";    
 
@@ -21,25 +18,33 @@ session_start();
     if (empty($partenaire)) {
         echo '<script> alert("Veuillez entrer un nom d`entreprise "); window.location = \'./panier.php\';</script>';
     }
-    else if (empty($product)) {
-        echo '<script> alert("Veuillez sélectionner un produit "); window.location = \'./panier.php\';</script>';
-      }
-    else if (empty($quantite)) {
-        echo '<script> alert("Veuillez entrer une quantité"); window.location = \'./Order.php\';</script>';
-      }
+
     else if (empty($livraison)) {
         echo '<script> alert("Veuillez entrer une adresse de livraison"); window.location = \'./Order.php\';</script>';
       }
 
        else {
         try{###############################################################################################################################################################
-                $req = $dbh->prepare("INSERT INTO commandes (utilisateur, produit, quantite, adresseLivraison, id_produit, ID) SELECT identifiant, Nom, :quantite, :livraison, id_produit, ID FROM produits JOIN utilisateurs ON 1 WHERE identifiant = :partenaire AND Nom = :product LIMIT 1");
-                $req->bindParam(':partenaire', $partenaire, PDO::PARAM_STR);
-                $req->bindParam(':product', $product, PDO::PARAM_STR);
-                $req->bindParam(':quantite', $quantite, PDO::PARAM_INT);
-                $req->bindParam(':livraison', $livraison, PDO::PARAM_STR);                
-                $req->execute();
-                echo "<script> alert('votre commande a été effectuée') window.location = './index.php';</script>";
+                
+                $cmd = $dbh->prepare("INSERT INTO `commandes`(`utilisateur`, `adresseLivraison`, `ID`) SELECT identifiant, :livraison, ID FROM utilisateurs WHERE identifiant = :partenaire");
+                $cmd->bindParam(':partenaire', $partenaire, PDO::PARAM_STR);
+                $cmd->bindParam(':livraison', $livraison, PDO::PARAM_STR);
+                $cmd->execute();
+
+                foreach ($_SESSION['panier'] as $i => $value) {
+                
+                    $cnt = $dbh->prepare("INSERT INTO `contient`(`id_commande`, `id_produit`, `quantite`) SELECT id_commande, id_produit, :quantite FROM commandes JOIN produits ON 1 WHERE Nom = :product ORDER BY id_commande DESC LIMIT 1");
+                    $cnt->bindParam(':product', $_SESSION['panier'][$i], PDO::PARAM_STR);
+                    $cnt->bindParam(':quantite', $_SESSION['quantite'][$i], PDO::PARAM_INT);
+                    $cnt->execute();
+                    
+                    //echo "INSERT INTO `contient`(`id_commande`, `id_produit`, `quantite`) SELECT id_commande, id_produit, ". $_SESSION['quantite'][$i]. " FROM commandes JOIN produits ON 1 WHERE Nom = ". $_SESSION['product'][$i] . " ORDER BY id_commande DESC LIMIT 1";
+                    }
+
+                unset($_SESSION['panier']);
+                unset($_SESSION['quantite']);
+
+                header('Location: ./panier.php');
             ###############################################################################################################################################################
             
         } catch (Exception $e){
