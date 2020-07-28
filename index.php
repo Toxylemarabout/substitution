@@ -25,58 +25,59 @@
   </div>
   
   <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-4">
-        <div class="card border-0">
-          <img class="card-img-top" src="./img/ruler.png" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text text-center"><B><U>Impression 3D</U></B></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 text-center text-position1">Objet imprimé en 3D à faible coût dont le modèle est modifiable</div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4 text-center text-position2">A combiner avec des règles d'hygiènes et de distanciation sociale pour permettre des conditions de protection optimales</div>
-      <div class="col-sm-4">
-        <div class="card border-0">
-          <img class="card-img-top" src="./img/clean.png" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text text-center"><B><U>Hygiène</U></B></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card border-0">
-          <img class="card-img-top" src="./img/shield.png" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text text-center"><B><U>Utilisation varié</U></B></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 text-center text-position3">
-        <p>Réduction des risques sur l'utilisation d'objets du quotidien : poignées de portes, boutons d'ascenseur, distributeur de savon, chasse d'eau...</p>
-      </div>
-      <div class="col-sm-4"></div>
-    </div>
-    <div class="row">
-      <div class="col-sm"></div>
-      <div class="col-sm text-center text-position4">
-        <p>Objet facile d'utilisation adaptable a de nombreuses situations avec son design pratique pour correspondre à toutes les situations.</p>
-      </div>
-      <div class="col-sm">
-        <div class="card border-0">
-          <img class="card-img-top" src="./img/design.png" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text text-center"><B><U>Ergonomie</U></B></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		<div class="row">
+			<div class="col-sm-8 mt-5">
+				<div class="M-text"><h1><U><B>Impression 3D</B></U></h1>
+					<div class="mt-5 M-text"><p>Objet imprimé en 3D à faible coût dont le modèle est modifiable</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card border-0 mt-5">
+					<img class="card-img-top" src="./img/ruler.png" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 mt-5">
+				<div class="card border-0">
+					<img class="card-img-top" src="./img/clean.png" alt="Card image cap">
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="M-text mt-5"><h1><U><B>Hygiène</B></U></h1>
+					<div class="mt-5 M-text"><p>A combiner avec des règles d'hygiènes et de distanciation sociale pour permettre des conditions de protection optimales</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 mt-5">
+				<div class="M-text"><h1><U><B>Utilisation varié</B></U></h1>
+					<div class="mt-5 M-text"><p>Réduction des risques sur l'utilisation d'objets du quotidien : poignées de portes, boutons d'ascenseur, distributeur de savon, chasse d'eau...</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card border-0 mt-5">
+					<img class="card-img-top" src="./img/shield.png" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 mt-5">
+				<div class="card border-0">
+					<img class="card-img-top" src="./img/design.png" alt="Card image cap">
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="M-text mt-5"><h1><U><B>Ergonomie</B></U></h1>
+					<div class="mt-5 M-text"><p>Objet facile d'utilisation adaptable a de nombreuses situations avec son design pratique pour correspondre à toutes les situations.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
   <?php
