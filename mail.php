@@ -44,7 +44,7 @@ session_start();
                 unset($_SESSION['panier']);
                 unset($_SESSION['quantite']);
 
-                header('Location: ./panier.php');
+                header('Location: ./panierValider.php');
             ###############################################################################################################################################################
             
         } catch (Exception $e){
